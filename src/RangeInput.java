@@ -16,9 +16,11 @@ public class RangeInput {
         minTemperature = min;
         myCurrentTemperature();
     }
+
     public void up(){
         currentTemperature = Math.min(currentTemperature + 1, maxTemperature);
     }
+
     public void down(){
         currentTemperature = Math.max(currentTemperature - 1, minTemperature);
     }

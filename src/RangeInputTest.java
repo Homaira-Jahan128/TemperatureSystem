@@ -10,6 +10,7 @@ class RangeInputTest {
         passengerTemperature1 = new RangeInput(70 , 50);
         passengerTemperature2 = new RangeInput(75 , 55);
     }
+
     @Test
     void getCurrentTemperatureOfPassenger1() {
         passengerTemperature1.up();
@@ -19,6 +20,7 @@ class RangeInputTest {
         assertEquals(62 , passengerTemperature1.getCurrentTemperature());
 
     }
+
     @Test
     void getCurrentTemperatureOfPassenger2() {
         passengerTemperature2.up();
