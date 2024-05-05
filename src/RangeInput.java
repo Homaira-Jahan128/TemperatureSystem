@@ -1,20 +1,20 @@
 public class RangeInput {
     private int currentTemperature ,maxTemperature ,minTemperature;
 
-    private void MyCurrentTemperature() {
+    private void myCurrentTemperature() {
         currentTemperature = (maxTemperature + minTemperature) / 2;
     }
 
     public RangeInput(){
         minTemperature = 80;
         maxTemperature = 60;
-        MyCurrentTemperature();
+        myCurrentTemperature();
     }
 
     public RangeInput(int max, int min) {
         maxTemperature = max;
         minTemperature = min;
-        MyCurrentTemperature();
+        myCurrentTemperature();
     }
     public void up(){
         currentTemperature = Math.min(currentTemperature + 1, maxTemperature);
